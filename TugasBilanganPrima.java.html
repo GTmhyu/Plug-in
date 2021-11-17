@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>TugasBilanganPrima.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+TugasBilanganPrima.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">TugasBilanganPrima {</span>
+    <span class="s0">public static void </span><span class="s1">Cetakjudul() {</span>
+        <span class="s1">String Nim</span><span class="s0">;</span>
+        <span class="s1">String Nama</span><span class="s0">;</span>
+        <span class="s1">String Kelas</span><span class="s0">;</span>
+        <span class="s1">String Project</span><span class="s0">;</span>
+        <span class="s1">Nim = </span><span class="s2">&quot;21090109&quot;</span><span class="s0">;</span>
+        <span class="s1">Nama = </span><span class="s2">&quot;Ziidan Afkar Maula&quot;</span><span class="s0">;</span>
+        <span class="s1">Kelas = </span><span class="s2">&quot;1A&quot;</span><span class="s0">;</span>
+        <span class="s1">Project = </span><span class="s2">&quot;Simple method&quot;</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Nim :&quot; </span><span class="s1">+ Nim)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Nama :&quot; </span><span class="s1">+ Nama)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Kelas :&quot; </span><span class="s1">+ Kelas)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Project :&quot; </span><span class="s1">+ Project)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">Angka() {</span>
+        <span class="s1">Scanner scan = </span><span class="s0">new </span><span class="s1">Scanner (System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.print(</span><span class="s2">&quot;Input bilangan : &quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">bilangan = scan.nextInt()</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">n = </span><span class="s3">0</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(bilangan &gt;= </span><span class="s3">2</span><span class="s1">) {</span>
+            <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">x = </span><span class="s3">1</span><span class="s0">; </span><span class="s1">x &lt;= bilangan</span><span class="s0">; </span><span class="s1">x++) {</span>
+                <span class="s0">int </span><span class="s1">m = bilangan % x</span><span class="s0">;</span>
+                <span class="s0">if </span><span class="s1">(m == </span><span class="s3">0</span><span class="s1">) {</span>
+                    <span class="s1">n++</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+            <span class="s0">if </span><span class="s1">(n == </span><span class="s3">2</span><span class="s1">) {</span>
+                <span class="s1">System.out.print(bilangan + </span><span class="s2">&quot; adalah bilangan prima&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">System.out.print(bilangan + </span><span class="s2">&quot; adalah bilangan bukan prima &quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.print(bilangan + </span><span class="s2">&quot; adalah bilangan bukan prima&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+
+
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Cetakjudul()</span><span class="s0">;</span>
+        <span class="s1">Angka()</span><span class="s0">;</span>
+
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>
